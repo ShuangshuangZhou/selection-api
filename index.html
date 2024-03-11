@@ -971,6 +971,11 @@
           to <a>fire an event</a> named <code>selectionchange</code>,
           which bubbles but is not cancelable, at the element.
         </p>
+        <p>
+          When the user agent has already queued a task to fire a <code>selectionchange</code>
+          event, then it should skip queueing tasks to continuously fire the equivalent
+          <code>selectionchange</code> event before the previous event is callbacked.
+        </p>
       </section>
     </section>
     <section id='conformance'>
